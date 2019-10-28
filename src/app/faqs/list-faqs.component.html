@@ -1,17 +1,25 @@
+<div class="accordion-main" *ngFor="let faq of faqs" >
 
-<div class="panel panel-primary" *ngFor="let faq of faqs" [class.panel-success] = "faq.isViewed">
-    <div class="panel-heading">
-        <div class="panel-title">
-            <div class="col-xs-10">Q{{faq.id}}   {{faq.question}}</div>
-            <div class="col-1">
-                <mat-icon class="icon pointerCursor" (click)= "faq.isViewed = !faq.isViewed">plusIcon</mat-icon>
+        <div class="accordion-panel " [class.accordion-panel-success]="faq.isViewed">
+            <div class=" accordion-heading "><span id="q-num">Q{{faq.id}} </span>  {{faq.question}}</div>
+            <div class="icon ">
+
+              <svg id="icon"  [class.svg-rotate__icon]="faq.isViewed"  [class.svg-rotate__iconback]="!faq.isViewed" (click)= "faq.isViewed = !faq.isViewed"  width="20px" height="20px" viewBox="0 0 357 357">
+               <g id="add" >
+                 <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+               </g>
+              </svg>
+
             </div>
         </div>
 
-    </div>
-    <div class="panel-body" [hidden]="faq.isViewed">
+
+    <div class="" [hidden]="!faq.isViewed" [class.accordion-body]="faq.isViewed" >
         <p>
             {{faq.answer}}
         </p>
     </div>
+
+
+
 </div>

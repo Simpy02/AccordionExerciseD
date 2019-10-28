@@ -11,7 +11,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class ListFaqsComponent implements OnInit {
   faqs:Faq[];
   constructor(
-    private service:FaqService, 
+    private service:FaqService,
     private matIconRegistry:MatIconRegistry,
     private domSanitizer:DomSanitizer) { }
 
@@ -21,6 +21,7 @@ export class ListFaqsComponent implements OnInit {
 
   registerIcons(){
     this.matIconRegistry.addSvgIcon('plusIcon',
+
     this.domSanitizer.bypassSecurityTrustResourceUrl('../supporting-files/plus-icon.svg')
     );
   }

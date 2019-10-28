@@ -1,5 +1,74 @@
 
 
-.pointerCursor{
-    cursor: pointer;
+.accordion-panel{
+  background: white;
+  height: 80px;
+  padding: 20px 5px 20px 5px;
+  color: black;
+  border:1.5px solid black;
+  border-left: 0;
+  border-right: 0;
+  transition: background 0.8s ease-in-out;
+
+
+}
+.accordion-panel-success{
+  background: #dcddde;
+
+
+}
+
+.accordion-heading{
+  font-weight: 500;
+  width:600px;
+  float:left;
+
+}
+
+.icon{
+  width:40px;
+  height: 40px;
+  cursor: pointer;
+  background: yellow;
+  float: right;
+  text-align:center;
+  padding-top: 10px;
+
+
+}
+
+.accordion-heading #q-num{
+  font-family:"Oswald",sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right:10px;
+
+}
+
+.accordion-body{
+  padding: 15px 15px;
+  height:100%;
+  font-family: 'Oswald',sans-serif;
+  font-weight: 500;
+  transition: height 2s ease-in-out;
+
+}
+
+
+.svg-rotate__icon{
+    transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transition: all 0.8s;
+}
+.svg-rotate__iconback{
+    transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   transition: all 0.8s;
+}
+
+@media(max-width:720px){
+
+
 }
