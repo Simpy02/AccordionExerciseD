@@ -1,0 +1,19 @@
+
+.main{
+  width:80%;
+  margin: 50px auto;
+}
+
+.title{
+  border-bottom: 20px solid black;
+  margin-bottom: 20px;
+}
+
+.title-caption{
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  font-family: 'Oswald',sans-serif;
+  padding-bottom: 15px;
+
+}

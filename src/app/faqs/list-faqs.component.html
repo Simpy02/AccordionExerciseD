@@ -1,0 +1,17 @@
+
+<div class="panel panel-primary" *ngFor="let faq of faqs" [class.panel-success] = "faq.isViewed">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <div class="col-xs-10">Q{{faq.id}}   {{faq.question}}</div>
+            <div class="col-1">
+                <mat-icon class="icon pointerCursor" (click)= "faq.isViewed = !faq.isViewed">plusIcon</mat-icon>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-body" [hidden]="faq.isViewed">
+        <p>
+            {{faq.answer}}
+        </p>
+    </div>
+</div>
