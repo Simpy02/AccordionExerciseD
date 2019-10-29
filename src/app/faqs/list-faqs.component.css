@@ -1,8 +1,8 @@
 
-
 .accordion-panel{
   background: white;
   height: 80px;
+  width: 100%;
   padding: 20px 5px 20px 5px;
   color: black;
   border:1.5px solid black;
@@ -10,18 +10,24 @@
   border-right: 0;
   transition: background 0.8s ease-in-out;
 
-
 }
 .accordion-panel-success{
-  background: #dcddde;
-
-
+  background: #cacbcc;
+  border: none;
 }
 
 .accordion-heading{
   font-weight: 500;
   width:600px;
   float:left;
+  font-family: 'OswaldRegular',sans-serif;
+
+}
+.accordion-heading #q-num{
+  font-family:"OswaldBold",sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-right:10px;
 
 }
 
@@ -33,28 +39,15 @@
   float: right;
   text-align:center;
   padding-top: 10px;
-
-
 }
-
-.accordion-heading #q-num{
-  font-family:"Oswald",sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  padding-right:10px;
-
-}
-
 .accordion-body{
   padding: 15px 15px;
   height:100%;
-  font-family: 'Oswald',sans-serif;
+  font-family: 'OswaldRegular',sans-serif;
   font-weight: 500;
   transition: height 2s ease-in-out;
 
 }
-
-
 .svg-rotate__icon{
     transform: rotate(45deg);
    -webkit-transform: rotate(45deg);
@@ -68,7 +61,82 @@
    transition: all 0.8s;
 }
 
+/*Media Queries*/
 @media(max-width:720px){
+  .accordion-heading{
+    width:100%;
+  }
 
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+  .accordion-heading{
+    width:100%;
+  }
+
+}
+
+/* Landscape */
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: landscape) {
+  .accordion-heading{
+    width:100%;
+  }
+
+}
+
+/* ----------- Google Pixel ----------- */
+
+/* Portrait */
+
+@media screen
+
+and (device-width: 360px)
+
+and (device-height: 640px)
+
+and (-webkit-device-pixel-ratio: 3)
+
+and (orientation: portrait) {
+  .accordion-heading{
+    width:100%;
+  }
+
+}
+
+/* Landscape */
+
+@media screen
+
+and (device-width: 360px)
+
+and (device-height: 640px)
+
+and (-webkit-device-pixel-ratio: 3)
+
+and (orientation: landscape) {
+  .accordion-heading{
+    width:100%;
+  }
 
 }
