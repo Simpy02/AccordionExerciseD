@@ -64,7 +64,11 @@
 /*Media Queries*/
 @media(max-width:720px){
   .accordion-heading{
-    width:100%;
+    width:80%;
+  }
+  .icon{
+    width:30px;
+    height: 30px;
   }
 
 }
@@ -83,7 +87,11 @@ and (-webkit-min-device-pixel-ratio: 2)
 
 and (orientation: portrait) {
   .accordion-heading{
-    width:100%;
+    width:80%;
+  }
+  .icon{
+    width:30px;
+    height: 30px;
   }
 
 }
@@ -100,7 +108,11 @@ and (-webkit-min-device-pixel-ratio: 2)
 
 and (orientation: landscape) {
   .accordion-heading{
-    width:100%;
+    width:80%;
+  }
+  .icon{
+    width:30px;
+    height: 30px;
   }
 
 }
@@ -119,7 +131,11 @@ and (-webkit-device-pixel-ratio: 3)
 
 and (orientation: portrait) {
   .accordion-heading{
-    width:100%;
+    width:80%;
+  }
+  .icon{
+    width:30px;
+    height: 30px;
   }
 
 }
@@ -136,7 +152,11 @@ and (-webkit-device-pixel-ratio: 3)
 
 and (orientation: landscape) {
   .accordion-heading{
-    width:100%;
+    width:80%;
+  }
+  .icon{
+    width:30px;
+    height: 30px;
   }
 
 }
